@@ -13,13 +13,14 @@
         <div id="root">
             <div class="box-img">
                 <div class="arrow-left">
-                    <i class="fas fa-arrow-left"></i>
+                    <i @click="prev" class="fas fa-arrow-left"></i>
                 </div>
                 <div class="content-img">
-                    <img :src="imgs[0]" alt="">
+                    <!-- uso il data array imgs e l'indice dei suoi elementi per spostarmi +1 o - 1 grazie alle funzioni prev e next  -->
+                    <img :src="imgs[indice_img]" alt="">
                 </div>
                 <div class="arrow-right">
-                    <i class="fas fa-arrow-right"></i>
+                    <i @click="next" class="fas fa-arrow-right"></i>
                 </div>
             </div>
         </div>

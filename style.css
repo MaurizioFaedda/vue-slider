@@ -20,7 +20,7 @@
 
 .arrow-left, .arrow-right {
     width: 25px;
-    height: 400px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
