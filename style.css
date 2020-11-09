@@ -38,3 +38,18 @@ img {
     height: 100%;
     object-fit: cover;
 }
+
+.circles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.circles>i {
+    padding: 10px;
+
+}
+
+i.active{
+    color: #ddd;
+}
