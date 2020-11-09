@@ -18,6 +18,14 @@ var app = new Vue ({
         },
 
         methods: {
+            interval: function() {
+              setInterval(() => {
+                  this.indice_img += 1;
+                   if (this.indice_img > 4){
+                       this.indice_img = 0;
+                   }
+               }, 2000)
+           },
             next() {
                 this.indice_img += 1;
 
@@ -31,6 +39,10 @@ var app = new Vue ({
                     this.indice_img = this.imgs.length -1;
                 }
 
-            },
-        }
+            }
+        },
+
+        created() {
+            this.interval()
+      }
 })
