@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-img {
+    width: 650px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-left, .arrow-right {
+    width: 25px;
+    height: 400px;
+    background-color: black;
+}
+
+.content-img{
+    width: 600px;
+    height: 100%;
+}
