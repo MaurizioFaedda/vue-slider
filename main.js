@@ -4,6 +4,9 @@ var app = new Vue ({
         data: {
             // prima img visualizzata (l'img con indice 0)
             indice_img: 0,
+            index: '',
+
+
             // creo un array con i link delle miei img
             imgs: [
                 "images/natura1.jpg",
@@ -38,6 +41,11 @@ var app = new Vue ({
                 if (this.indice_img < 0){
                     this.indice_img = this.imgs.length -1;
                 }
+
+            },
+            change(index) {
+
+                this.indice_img = index;
 
             }
         },

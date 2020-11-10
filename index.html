@@ -19,7 +19,7 @@
                     <!-- uso il data array imgs e l'indice dei suoi elementi per spostarmi +1 o - 1 grazie alle funzioni prev e next  -->
                     <img :src="imgs[indice_img]" alt="">
                     <div class="circles">
-                        <i v-for="(item, index) in imgs" :class="index == indice_img ? 'active' : null" class="fas fa-circle"></i>
+                        <i  v-for="(item, index) in imgs" :class="index == indice_img ? 'active' : null" class="fas fa-circle" @click="change(index)"></i>
                         <!-- <i v-for="item in imgs" class="far fa-circle"></i> -->
                     </div>
 
